@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoTech ofrece servicios automotrices integrales en Cúcuta: electrónica automotriz, aire acondicionado, seguridad electrónica y soldadura especializada.">
+    <meta name="keywords" content="servicio automotriz, electrónica automotriz, aire acondicionado vehicular, soldadura automotriz, alarmas para carros, Cúcuta">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E0E0E">
+    <link rel="canonical" href="https://autotech-servicios.com/">
+    <title>AutoTech · Servicios Automotrices en Cúcuta</title>
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=()">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://api.emailjs.com; frame-src 'self' https://www.google.com;">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AutoTech · Servicios Automotrices en Cúcuta">
+    <meta property="og:description" content="Tecnología, precisión y soporte profesional para tu vehículo.">
+    <meta property="og:url" content="https://autotech-servicios.com/">
+    <meta property="og:image" content="https://autotech-servicios.com/assets/og-image.jpg">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AutoTech · Servicios Automotrices en Cúcuta">
+    <meta name="twitter:description" content="Diagnóstico electrónico, aires acondicionados, seguridad y soldadura de precisión.">
+    <meta name="twitter:image" content="https://autotech-servicios.com/assets/og-image.jpg">
+
+    <!-- Local Fonts -->
+    <link rel="preload" href="assets/fonts/orbitron/orbitron-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+
+    <!-- Icon Sprites (Local SVG) -->
+    <svg style="display: none;">
+        <use href="assets/icons/icon-sprites.svg"></use>
+    </svg>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutomotiveBusiness",
+        "name": "AutoTech Servicios Automotrices",
+        "url": "https://autotech-servicios.com/",
+        "description": "Especialistas en electrónica automotriz, aires acondicionados, seguridad electrónica y soldadura en Cúcuta.",
+        "telephone": "+57 320 1234567",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Principal #123",
+            "addressLocality": "Cúcuta",
+            "addressRegion": "Norte de Santander",
+            "postalCode": "540001",
+            "addressCountry": "CO"
+        },
+        "openingHours": "Mo-Sa 08:00-18:00",
+        "priceRange": "$$"
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar" aria-label="Navegación principal">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <div class="logo-glow"></div>
+                    <h1 class="logo">
+                        Servicios Automotriz En Cúcuta
+                    </h1>
+                </div>
+
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a role="menuitem" href="#inicio" class="nav-link">Inicio</a></li>
+                    <li role="none"><a role="menuitem" href="#servicios" class="nav-link">Servicios</a></li>
+                    <li role="none"><a role="menuitem" href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+
+                <!-- Menu Button -->
+                <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+                    <svg class="icon" id="menuIcon" aria-hidden="true">
+                        <use href="assets/icons/icon-sprites.svg#icon-bars"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación" aria-hidden="true">
+            <div class="mobile-menu-content">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="contenido-principal">
+        <!-- Hero Slider -->
+        <header id="inicio" class="hero-slider" role="region" aria-roledescription="carrusel" aria-live="polite" aria-label="Servicios destacados">
+            <div class="slider-container">
+                <!-- Slide 1 -->
+                <div class="slide active" data-service="service-electronica">
+                    <div class="slide-background" style="background-image: url('assets/images/slider/electronica.jpg');">
+                        <div class="gradient-overlay gradient-blue"></div>
+                        <div class="gradient-bottom"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="container text-center">
+                            <div class="slide-logo-container">
+                                <img src="assets/icons/elverChacon.svg" alt="Logo Elver Chacon" class="slide-logo" aria-hidden="true">
+                            </div>
+                            <h1 class="slide-title">ElectróAutos Chacon</h1>
+                            <p class="slide-subtitle">Diagnóstico avanzado y sistemas eléctricos</p>
+                        </div>
+                    </div>
+                    <div class="decorative-box box-1"></div>
+                    <div class="decorative-box box-2"></div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide" data-service="service-aires">
+                    <div class="slide-background" style="background-image: url('assets/images/slider/aire-acondicionado.jpg');">
+                        <div class="gradient-overlay gradient-cyan"></div>
+                        <div class="gradient-bottom"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="container text-center">
+                            <div class="slide-logo-container">
+                                <img src="assets/icons/logo jj.svg" alt="Logo J.J" class="slide-logo" aria-hidden="true">
+                            </div>
+                            <h2 class="slide-title">Aire Acondicionado J.J Automotriz</h2>
+                            <p class="slide-subtitle">Climatización y refrigeración de alta eficiencia</p>
+                        </div>
+                    </div>
+                    <div class="decorative-box box-1"></div>
+                    <div class="decorative-box box-2"></div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide" data-service="service-alarma">
+                    <div class="slide-background" style="background-image: url('assets/images/slider/alarmas.jpg');">
+                        <div class="gradient-overlay gradient-purple"></div>
+                        <div class="gradient-bottom"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="container text-center">
+                            <div class="slide-logo-container">
+                                <img src="assets/icons/alarmaRivera.svg" alt="Logo Alarmas Rivera" class="slide-logo" aria-hidden="true">
+                            </div>
+                            <h2 class="slide-title">Alarmas Rivera Automotrices y Seguridad Electrónica Integral</h2>
+                            <p class="slide-subtitle">Protección inteligente y monitoreo avanzado</p>
+                        </div>
+                    </div>
+                    <div class="decorative-box box-1"></div>
+                    <div class="decorative-box box-2"></div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide" data-service="service-soldadura">
+                    <div class="slide-background" style="background-image: url('assets/images/slider/soldadura.jpg');">
+                        <div class="gradient-overlay gradient-orange"></div>
+                        <div class="gradient-bottom"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="container text-center">
+                            <div class="slide-logo-container">
+                                <img src="assets/icons/matin2.svg" alt="Logo Martin Soldadura" class="slide-logo" aria-hidden="true">
+                            </div>
+                            <h2 class="slide-title">Martin Soldadura Automotriz, Torno y Dobladora de Tubos</h2>
+                            <p class="slide-subtitle">Fabricación, reparación y mecanizado de precisión</p>
+                        </div>
+                    </div>
+                    <div class="decorative-box box-1"></div>
+                    <div class="decorative-box box-2"></div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="slider-arrow slider-prev" aria-label="Slide anterior">
+                <svg class="icon" aria-hidden="true">
+                    <use href="assets/icons/icon-sprites.svg#icon-chevron-left"></use>
+                </svg>
+            </button>
+            <button class="slider-arrow slider-next" aria-label="Slide siguiente">
+                <svg class="icon" aria-hidden="true">
+                    <use href="assets/icons/icon-sprites.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+
+            <!-- Slide Indicators -->
+            <div class="slider-indicators" role="tablist" aria-label="Seleccionar servicio destacado">
+                <button class="indicator active" data-slide="0" data-service="service-electronica" type="button" role="tab" aria-selected="true" aria-controls="service-electronica">
+                    <div class="indicator-icon">
+                        <img src="assets/icons/elverChacon.svg" alt="Logo Elver Chacon" class="indicator-logo" aria-hidden="true">
+                    </div>
+                    <span class="indicator-label">Electrónica</span>
+                </button>
+                <button class="indicator" data-slide="1" data-service="service-aires" type="button" role="tab" aria-selected="false" aria-controls="service-aires">
+                    <div class="indicator-icon">
+                        <img src="assets/icons/logo jj.svg" alt="Logo J.J" class="indicator-logo" aria-hidden="true">
+                    </div>
+                    <span class="indicator-label">Aires Acondicionados</span>
+                </button>
+                <button class="indicator" data-slide="2" data-service="service-alarma" type="button" role="tab" aria-selected="false" aria-controls="service-alarma">
+                    <div class="indicator-icon">
+                        <img src="assets/icons/alarmaRivera.svg" alt="Logo Alarmas Rivera" class="indicator-logo" aria-hidden="true">
+                    </div>
+                    <span class="indicator-label">Alarma</span>
+                </button>
+                <button class="indicator" data-slide="3" data-service="service-soldadura" type="button" role="tab" aria-selected="false" aria-controls="service-soldadura">
+                    <div class="indicator-icon">
+                        <img src="assets/icons/matin2.svg" alt="Logo Martin Soldadura" class="indicator-logo" aria-hidden="true">
+                    </div>
+                    <span class="indicator-label">Soldadura</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Services Section -->
+        <section id="servicios" class="services-section" aria-labelledby="servicios-heading">
+            <!-- Background decorative elements -->
+            <div class="bg-blur blur-1"></div>
+            <div class="bg-blur blur-2"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="servicios-heading">Nuestros Servicios</h2>
+                    <p class="section-subtitle">Soluciones especializadas con tecnología de vanguardia para tu vehículo</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service Card 1: Aires -->
+                    <div class="service-card" id="service-aires">
+                        <div class="card-gradient gradient-cyan-bg"></div>
+                        <div class="card-content">
+                            <div class="card-icon-container">
+                                <div class="card-icon">
+                                    <img src="assets/icons/logo jj.svg" alt="Logo Papa" class="icon-logo" aria-hidden="true">
+                                </div>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3 class="card-title">Aire Acondicionado Automotriz J.J</h3>
+                            <p class="card-description">Especialistas en sistemas de climatización y refrigeración para todo tipo de vehículos y maquinaria pesada.</p>
+                            <div class="card-services">
+                                <p class="services-label">Servicios principales:</p>
+                                <ul class="services-list">
+                                    <li>Diagnóstico y detección de fugas de gas refrigerante</li>
+                                    <li>Carga, recarga y calibración de sistemas de aire acondicionado automotriz</li>
+                                    <li>Reparación y mantenimiento de compresores, condensadores y evaporadores</li>
+                                    <li>Diseño e instalación de sistemas A/C en maquinaria amarilla y automotriz</li>                                    
+                                    <li>Mantenimiento general aires acondicionados automotrices</li>
+                                    <li>instalacion electrica y electronica de aires acondicionados automotrices</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="technical-support-list">
+                                <div class="technical-support-item">
+                                    <p class="card-commitment">Soporte técnico: <strong>Edilson Diaz</strong> - Tel: 3184740921</p>
+                                    <a href="https://wa.me/573184740921?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Aire%20Acondicionado%20Automotriz" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Edilson Diaz por WhatsApp">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="technical-support-item">
+                                    <p class="card-commitment">Soporte técnico: <strong>Jose Flores "Peru"</strong> - Tel: 3118735313</p>
+                                    <a href="https://wa.me/573118735313?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Aire%20Acondicionado%20Automotriz" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Jose Flores por WhatsApp">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2: Electrónica -->
+                    <div class="service-card" id="service-electronica">
+                        <div class="card-gradient gradient-blue-bg"></div>
+                        <div class="card-content">
+                            <div class="card-icon-container">
+                                <div class="card-icon">
+                                    <img src="assets/icons/elverChacon.svg" alt="Logo Elver Chacon" class="icon-logo" aria-hidden="true">
+                                </div>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3 class="card-title">Electró Autos Chacon</h3>
+                            <p class="card-description">En nuestro centro automotriz contamos con técnicos especializados en electrónica y sistemas eléctricos vehiculares, capacitados para diagnosticar.</p>
+                            <div class="card-services">
+                                <p class="services-label">Servicios principales:</p>
+                                <ul class="services-list">
+                                    <li>Diagnóstico electrónico avanzado con escáner automotriz</li>
+                                    <li>Revisión y reparación de sistemas de inyección, encendido y carga</li>                                    
+                                    <li>Instalación y mantenimiento de cableado, fusibles y sistemas eléctricos</li>
+                                    <li>Actualización y configuración de sensores y sistemaselectrico y electrónicos</li>
+                                </ul>
+                            </div>
+                            <div class="technical-support-list">
+                                <div class="technical-support-item">
+                                    <p class="card-commitment">Soporte técnico: <strong>Elver Chacon</strong> - Tel: 3103076399</p>
+                                    <a href="https://wa.me/573103076399?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Electr%C3%B3nica%20Automotriz" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Elver Chacon por WhatsApp">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3: Alarmas -->
+                    <div class="service-card" id="service-alarma">
+                        <div class="card-gradient gradient-purple-bg"></div>
+                        <div class="card-content">
+                            <div class="card-icon-container">
+                                <div class="card-icon">
+                                    <img src="assets/icons/alarmaRivera.svg" alt="Logo Alarmas Rivera" class="icon-logo" aria-hidden="true">
+                                </div>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3 class="card-title">Alarmas Rivera</h3>
+                            <p class="card-description">Nos especializamos en sistemas de protección , tanto para vehículos como para espacios residenciales. Nuestro enfoque combina tecnología avanzada, instalación profesional</p>
+                            <div class="card-services">
+                                <p class="services-label">Servicios principales:</p>
+                                <ul class="services-list">
+                                    <li>Instalación y programación de alarmas automotrices con control remoto, sensores de movimiento, presencia y bloqueo antirrobo</li>
+                                    <li>Sistemas de rastreo GPS en tiempo real para vehículos particulares y de carga</li>
+                                    <li>Cámaras de seguridad (CCTV e IP) con monitoreo remoto desde dispositivos móviles</li>
+                                    <li>Alarmas residenciales y comerciales con sensores de humo, gas y movimiento</li>
+                                    <li>Control de accesos inteligentes: cerraduras biométricas, lectores RFID y sistemas de apertura remota</li>
+                                    <li>Cercos eléctricos y sistemas perimetrales de alta tensión, con integración de alertas y notificaciones en tiempo real</li>
+                                    <li>Automatización y conexión integral de seguridad electrónica para viviendas, empresas o flotas</li>
+                                </ul>
+                            </div>
+                            <div class="technical-support-list">
+                                <div class="technical-support-item">
+                                    <p class="card-commitment">Soporte técnico: <strong>Juan Rivera</strong> - Tel: 3208856199</p>
+                                    <a href="https://wa.me/573208856199?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Alarmas%20Automotrices%20y%20Seguridad%20Electr%C3%B3nica%20Integral" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Juan Rivera por WhatsApp">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 4: Soldadura -->
+                    <div class="service-card" id="service-soldadura">
+                        <div class="card-gradient gradient-orange-bg"></div>
+                        <div class="card-content">
+                            <div class="card-icon-container">
+                                <div class="card-icon">
+                                    <img src="assets/icons/matin2.svg" alt="Logo Martin Soldadura" class="icon-logo" aria-hidden="true">
+                                </div>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3 class="card-title">Martin Soldadura Automotriz, Torno y Dobladora de Tubos</h3>
+                            <p class="card-description">Somos especialistas en fabricación, reparación y adaptación de estructuras metálicas automotrices, con servicios integrales de soldadura especializada, mecanizado en torno y doblado de tubos de precisión.</p>
+                            <div class="card-services">
+                                <p class="services-label">Servicios principales:</p>
+                                <ul class="services-list">
+                                    <li>Soldadura profesional MIG, TIG y autógena en acero, aluminio e inoxidable</li>
+                                    <li>Reparación y refuerzo de chasises, escapes, radiadores, soportes y estructuras automotrices</li>
+                                    <li>Diseño y fabricación de piezas personalizadas mediante torno y dobladora CNC</li>
+                                    <li>Doblado de tubos estructurales e hidráulicos con medidas exactas según requerimiento técnico</li>
+                                    <li>Reconstrucción de componentes metálicos dañados por impacto o corrosión</li>
+                                    <li>Fabricación de soportes, defensas, barandas, marcos y estructuras a medida</li>
+                                    <li>Servicios de torno y dobladora de tubos, corte de tubos, soldadura de tubos general, etc.</li>
+                                </ul>
+                            </div>
+                            <div class="technical-support-list">
+                                <div class="technical-support-item">
+                                    <p class="card-commitment">Soporte técnico: <strong>Martin Soldadura</strong> - Tel: (Agregar número)</p>
+                                    <a href="https://wa.me/5211234567890?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Soldadura%20Automotriz%2C%20Torno%20y%20Dobladora%20de%20Tubos" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Martin Soldadura Automotriz por WhatsApp">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact-section" aria-labelledby="contacto-heading">
+            <!-- Background effects -->
+            <div class="bg-blur-contact blur-1"></div>
+            <div class="bg-blur-contact blur-2"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="contacto-heading">Contacto</h2>
+                    <p class="section-subtitle">Estamos aquí para atender tus necesidades. Contáctanos y obtén una cotización personalizada.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Map Section -->
+                    <div class="map-container">
+                        <h3 class="map-title">
+                            <svg class="icon" aria-hidden="true">
+                                <use href="assets/icons/icon-sprites.svg#icon-map-marker"></use>
+                            </svg>
+                            Ubicación
+                        </h3>
+                        <div class="map-placeholder" aria-labelledby="mapTitle">
+                            <iframe
+                                title="Ubicación en Cúcuta"
+                                id="mapTitle"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.561620430454!2d-72.50782012392957!3d7.893907205744286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666c3ae6b27ce7%3A0xeca858978369fd2!2sC%C3%BAcuta%2C%20Norte%20de%20Santander!5e0!3m2!1ses!2sco!4v1731500000000!5m2!1ses!2sco"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgraded"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="map-info">
+                            <address class="map-address">Av.2 Entre calle 6 y calle 7, Barrio latino (centro), Cúcuta</address>
+                            <div class="map-schedule">
+                                <svg class="icon" aria-hidden="true">
+                                    <use href="assets/icons/icon-sprites.svg#icon-clock"></use>
+                                </svg>
+                                <div class="schedule-text">
+                                    <p><strong>Lun - Vie:</strong> 8:00 - 18:00</p>
+                                    <p><strong>Sábado:</strong> 8:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-phones">
+                            <h4 class="phones-title">
+                                <svg class="icon" aria-hidden="true">
+                                    <use href="assets/icons/icon-sprites.svg#icon-phone"></use>
+                                </svg>
+                                Teléfonos de Contacto
+                            </h4>
+                            <div class="phone-list">
+                                <!-- Aire Acondicionado J.J -->
+                                <div class="phone-item">
+                                    <p class="phone-service"><strong>Aire Acondicionado J.J:</strong></p>
+                                    <div class="phone-contact">
+                                        <span>Edilson Diaz - 3184740921</span>
+                                        <a href="https://wa.me/573184740921?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Aire%20Acondicionado%20Automotriz" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Edilson Diaz por WhatsApp">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="phone-contact">
+                                        <span>Jose Flores "Peru" - 3118735313</span>
+                                        <a href="https://wa.me/573118735313?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Aire%20Acondicionado%20Automotriz" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Jose Flores por WhatsApp">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Electró Autos Chacon -->
+                                <div class="phone-item">
+                                    <p class="phone-service"><strong>Electró Autos Chacon:</strong></p>
+                                    <div class="phone-contact">
+                                        <span>Elver Chacon - 3103076399</span>
+                                        <a href="https://wa.me/573103076399?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Electr%C3%B3nica%20Automotriz" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Elver Chacon por WhatsApp">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Alarmas Rivera -->
+                                <div class="phone-item">
+                                    <p class="phone-service"><strong>Alarmas Rivera:</strong></p>
+                                    <div class="phone-contact">
+                                        <span>Juan Rivera - 3208856199</span>
+                                        <a href="https://wa.me/573208856199?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Alarmas%20Automotrices%20y%20Seguridad%20Electr%C3%B3nica%20Integral" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Juan Rivera por WhatsApp">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Martin Soldadura -->
+                                <div class="phone-item">
+                                    <p class="phone-service"><strong>Martin Soldadura:</strong></p>
+                                    <div class="phone-contact">
+                                        <span>Martin Soldadura - (Agregar número)</span>
+                                        <a href="https://wa.me/5211234567890?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Soldadura%20Automotriz%2C%20Torno%20y%20Dobladora%20de%20Tubos" target="_blank" rel="noopener noreferrer" class="whatsapp-btn-inline" aria-label="Contactar a Martin Soldadura Automotriz por WhatsApp">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" aria-labelledby="footer-heading">
+        <div class="footer-gradient"></div>
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <div class="footer-brand-glow"></div>
+                        <h3 class="footer-logo">Servicio Automotriz Cúcuta</h3>
+                    </div>
+                    <p class="footer-slogan">"Potencia y precisión en cada detalle"</p>
+                    <p class="footer-description">Taller automotriz especializado en tecnología de vanguardia y servicios integrales para tu vehículo.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <nav class="footer-col" aria-label="Enlaces rápidos">
+                    <h4 class="footer-heading" id="footer-heading">Enlaces rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#contacto" aria-label="Ver preguntas frecuentes">Preguntas frecuentes</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Servicios destacados</h4>
+                    <ul class="footer-services">
+                        <li><span aria-hidden="true">•</span> Aire Acondicionado</li>
+                        <li><span aria-hidden="true">•</span> Electrónica Automotriz</li>
+                        <li><span aria-hidden="true">•</span> Alarmas y Seguridad</li>
+                        <li><span aria-hidden="true">•</span> Soldadura y Doblado</li>
+                    </ul>
+                </div>
+
+                <!-- Social & Hours -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+                            <svg class="icon" aria-hidden="true">
+                                <use href="assets/icons/icon-sprites.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                            <svg class="icon" aria-hidden="true">
+                                <use href="assets/icons/icon-sprites.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/573201234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link">
+                            <svg class="icon" aria-hidden="true">
+                                <use href="assets/icons/icon-sprites.svg#icon-whatsapp"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer-hours">
+                        <p class="hours-label">Horario de atención:</p>
+                        <p>Lun - Vie: 8:00 - 18:00</p>
+                        <p>Sábado: 9:00 - 14:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Servicio Automotriz en Cúcuta. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="/politica-de-privacidad.html">Privacidad</a>
+                    <a href="/terminos-y-condiciones.html">Términos</a>
+                    <a href="/politica-de-cookies.html">Cookies</a>
+                </div>
+            </div>
+
+            <!-- Decorative line -->
+            <div class="footer-decorative-line"></div>
+        </div>
+    </footer>
+
+
+    <!-- Custom JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
