@@ -234,9 +234,6 @@ function handleScrollAnimations() {
     });
 }
 
-// Run on scroll
-window.addEventListener('scroll', handleScrollAnimations);
-
 // Run on load
 window.addEventListener('load', handleScrollAnimations);
 
@@ -265,16 +262,6 @@ document.querySelectorAll('.service-card').forEach(card => {
 // Observe contact section items
 document.querySelectorAll('.contact-info-item').forEach(item => {
     observer.observe(item);
-});
-
-// ============================================
-// WHATSAPP BUTTON ANALYTICS (Optional)
-// ============================================
-document.querySelectorAll('.whatsapp-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        console.log('WhatsApp button clicked for service');
-        // You can add analytics tracking here
-    });
 });
 
 // ============================================
@@ -317,24 +304,7 @@ const debouncedScrollHandler = debounce(() => {
 window.addEventListener('scroll', debouncedScrollHandler);
 
 // ============================================
-// PRELOAD IMAGES
-// ============================================
-function preloadImages() {
-    const images = [
-        'https://images.unsplash.com/photo-1759477444312-73e240a8ec46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBkYXNoYm9hcmQlMjBlbGVjdHJvbmljc3xlbnwxfHx8fDE3NjMwNjEzMjl8MA&ixlib=rb-4.1.0&q=80&w=1080',
-        'https://images.unsplash.com/photo-1715597964018-b9ecfd21574e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBhaXIlMjBjb25kaXRpb25pbmclMjByZXBhaXJ8ZW58MXx8fHwxNzYzMDYxMTU1fDA&ixlib=rb-4.1.0&q=80&w=1080',
-        'https://images.unsplash.com/photo-1640815169249-24705979d176?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2ZWhpY2xlJTIwc2VjdXJpdHklMjBzeXN0ZW18ZW58MXx8fHwxNzYzMDQ4MjQwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-        'https://images.unsplash.com/photo-1641893823219-38b433f736c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd2VsZGluZyUyMG1ldGFsfGVufDF8fHx8MTc2MzAxNjUyMHww&ixlib=rb-4.1.0&q=80&w=1080'
-    ];
-    
-    images.forEach(src => {
-        const img = new Image();
-        img.src = src;
-    });
-}
-
-// Preload images after page load
-window.addEventListener('load', preloadImages);
+// PRELOAD IMAGES (eliminado: se cargaban imágenes externas pesadas innecesarias)
 
 // ============================================
 // ACCESSIBILITY IMPROVEMENTS
@@ -352,8 +322,6 @@ document.querySelectorAll('.service-card').forEach(card => {
 });
 
 // ============================================
-// CONSOLE WELCOME MESSAGE
+// CONSOLE WELCOME MESSAGE (eliminado para no ensuciar la consola en producción)
 // ============================================
-console.log('%c🚗 AutoTech - Servicios Automotriz en Cúcuta', 'color: #00AEEF; font-size: 20px; font-weight: bold;');
-console.log('%cPotencia y precisión en cada detalle', 'color: #A0A0A0; font-style: italic;');
 

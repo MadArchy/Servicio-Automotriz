@@ -961,7 +961,7 @@ button:focus-visible {
 /* Service Cards */
 .service-card {
     position: relative;
-    background: rgba(44, 44, 44, 0.6);
+    background: rgba(44, 44, 44, 0.75);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(160, 160, 160, 0.1);
@@ -1082,8 +1082,15 @@ button:focus-visible {
     justify-content: flex-start;
 }
 
+@media (min-width: 1024px) {
+    .card-content {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
 .card-icon-container {
-    margin-bottom: 0;
+    margin-bottom: 0.75rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1155,12 +1162,13 @@ button:focus-visible {
 .card-title {
     font-size: 1.5rem;
     color: var(--ice-white);
-    margin: 0;
+    margin: 0.25rem 0 0.25rem 0;
     padding: 0 0.5rem;
     transition: color 0.3s ease;
     text-align: center;
     line-height: 1.3;
     width: 100%;
+    text-shadow: 0 1px 2px rgba(14, 14, 14, 0.6);
 }
 
 @media (min-width: 768px) {
@@ -1174,8 +1182,8 @@ button:focus-visible {
 }
 
 .card-description {
-    color: rgba(160, 160, 160, 0.8);
-    font-size: 0.875rem;
+    color: rgba(235, 235, 235, 0.9);
+    font-size: 0.9375rem;
     line-height: 1.7;
     margin: 0;
     text-align: center;
@@ -1185,12 +1193,22 @@ button:focus-visible {
 
 @media (min-width: 768px) {
     .card-description {
-        font-size: 0.9375rem;
+        font-size: 1rem;
     }
 }
 
+/* Summary line above the services for quick scanning */
+.card-summary {
+    color: rgba(245, 245, 245, 0.95);
+    font-size: 0.975rem;
+    line-height: 1.7;
+    margin: 0.35rem 0 0.75rem 0;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
 .card-services {
-    margin: 0;
+    margin: 0.25rem 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1199,7 +1217,7 @@ button:focus-visible {
 
 .services-label {
     color: var(--neon-blue);
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     margin: 0 0 0.75rem 0;
     text-align: center;
     font-weight: 600;
@@ -1207,8 +1225,8 @@ button:focus-visible {
 
 .services-list {
     list-style: none;
-    color: rgba(160, 160, 160, 0.7);
-    font-size: 0.75rem;
+    color: rgba(220, 220, 220, 0.85);
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -1217,7 +1235,7 @@ button:focus-visible {
 
 @media (min-width: 768px) {
     .services-list {
-        font-size: 0.8125rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -1225,9 +1243,30 @@ button:focus-visible {
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     padding: 0 0.5rem;
-    line-height: 1.5;
+    line-height: 1.8;
+}
+
+/* Mejoras de legibilidad específicas para móvil */
+@media (max-width: 767px) {
+    .service-card {
+        padding: 2.25rem 1.5rem;
+    }
+
+    .card-summary {
+        font-size: 1rem;
+        line-height: 1.8;
+        padding: 0 0.75rem;
+    }
+
+    .services-list {
+        font-size: 1.05rem;
+    }
+
+    .services-list li {
+        padding: 0 0.75rem;
+    }
 }
 
 .services-list li:last-child {
@@ -1240,6 +1279,57 @@ button:focus-visible {
     margin-top: 0.125rem;
 }
 
+/* ============================================
+   CARD THEMES PER SERVICE (Better Contrast)
+   ============================================ */
+/* Aire Acondicionado J.J - Cyan */
+#service-aires .card-title,
+#service-aires .services-label {
+    color: #06b6d4;
+}
+#service-aires .services-list li::before {
+    color: #06b6d4;
+}
+#service-aires:hover {
+    border-color: rgba(6, 182, 212, 0.6);
+}
+
+/* Electrónica Chacon - Blue */
+#service-electronica .card-title,
+#service-electronica .services-label {
+    color: #3b82f6;
+}
+#service-electronica .services-list li::before {
+    color: #3b82f6;
+}
+#service-electronica:hover {
+    border-color: rgba(59, 130, 246, 0.6);
+}
+
+/* Alarmas Rivera - Purple */
+#service-alarma .card-title,
+#service-alarma .services-label {
+    color: #a855f7;
+}
+#service-alarma .services-list li::before {
+    color: #a855f7;
+}
+#service-alarma:hover {
+    border-color: rgba(168, 85, 247, 0.6);
+}
+
+/* Martin Soldadura - Orange */
+#service-soldadura .card-title,
+#service-soldadura .services-label {
+    color: #f97316;
+}
+#service-soldadura .services-list li::before {
+    color: #f97316;
+}
+#service-soldadura:hover {
+    border-color: rgba(249, 115, 22, 0.6);
+}
+
 .card-commitment {
     color: rgba(160, 160, 160, 0.6);
     font-size: 0.75rem;
@@ -1249,6 +1339,65 @@ button:focus-visible {
     font-style: italic;
 }
 
+/* CTA button inside cards */
+.card-cta {
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.card-cta .btn-brand {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9375rem;
+    padding: 0.875rem 1rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Brand color variants for CTA */
+#service-aires .btn-brand {
+    background: #06b6d4;
+    box-shadow: 0 6px 16px rgba(6, 182, 212, 0.25);
+}
+#service-aires .btn-brand:hover {
+    background: #0891b2;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(6, 182, 212, 0.35);
+}
+
+#service-electronica .btn-brand {
+    background: #3b82f6;
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.25);
+}
+#service-electronica .btn-brand:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.35);
+}
+
+#service-alarma .btn-brand {
+    background: #a855f7;
+    box-shadow: 0 6px 16px rgba(168, 85, 247, 0.25);
+}
+#service-alarma .btn-brand:hover {
+    background: #9333ea;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.35);
+}
+
+#service-soldadura .btn-brand {
+    background: #f97316;
+    box-shadow: 0 6px 16px rgba(249, 115, 22, 0.25);
+}
+#service-soldadura .btn-brand:hover {
+    background: #ea580c;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.35);
+}
 /* Technical Support List */
 .technical-support-list {
     margin-top: auto;
